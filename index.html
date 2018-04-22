@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+	<title>Document</title>
+	<link rel="stylesheet" href="http://res.wx.qq.com/open/libs/weui/0.4.3/weui.min.css">
+	<style>
+		.weui_btn{
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	</style>
+</head>
+<body>
+	<div class="container page">
+		<div class="question-item" id="question1">
+			<div class="weui_cells_title">请回答12÷6=？（以防小朋友误点）</div>
+			<div class="weui_cells weui_cells_checkbox weui_cell_primary" id="answer1">
+				<label for="b" class="weui_cell weui_check_label">
+					<div class="weui_cell_hd">
+						<input type="radio" class="weui_check" id="b" name="who-paly" value="b">
+						<span class="weui_icon_checked"></span>
+					</div>
+					<div class="weui_cell_bd">
+						<p>b</p>
+					</div>
+				</label>
+			</div>
+		</div>
+		<div class="question-item" id="question2" style="display: none">
+			<div class="weui_cells_title">您的家里是谁在玩宝宝巴士？</div>
+			<div class="weui_cells weui_cells_checkbox" id="answer2">
+				
+			</div>
+		</div>
+		
+		<div class="weui_cells_title">复选列表项</div>
+        <div class="weui_cells weui_cells_checkbox">
+            <label class="weui_cell weui_check_label" for="s11">
+                <div class="weui_cell_hd">
+                    <input type="checkbox" class="weui_check" name="checkbox1" id="s11" />
+                    <i class="weui_icon_checked"></i>
+                </div>
+                <div class="weui_cell_bd">
+                    <p>standard is dealt for u.</p>
+                </div>
+            </label>
+            <label class="weui_cell weui_check_label" for="s12">
+                <div class="weui_cell_hd">
+                    <input type="checkbox" name="checkbox1" class="weui_check" id="s12"/>
+                    <i class="weui_icon_checked"></i>
+                </div>
+                <div class="weui_cell_bd">
+                    <p>standard is dealicient for u.</p>
+                </div>
+            </label>
+
+            <div class="weui_cells_title">文本框</div>
+        <div class="weui_cells">
+            <div class="weui_cell">
+                <div class="weui_cell_bd">
+                    <input class="weui_input" type="text" placeholder="请输入文本"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="weui_cells_title">文本域</div>
+        <div class="weui_cells weui_cells_form">
+            <div class="weui_cell">
+                <div class="weui_cell_bd">
+                    <textarea class="weui_textarea" placeholder="请输入文本" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+		<a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_primary">提交</a>
+
+	</div>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>	
+<script src="js/main.js"></script>	
+</body>
+</html>
