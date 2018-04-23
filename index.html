@@ -10,72 +10,141 @@
 			left: 50%;
 			transform: translateX(-50%);
 		}
+		.weui_btn.weui_btn_mini{
+			font-size: 16px;
+			line-height: 2.2;
+		}
+		.weui_textarea,.weui_input{
+			border: 1px solid #ddd;
+		}
+		.weui_cell:before{
+			border: 0;
+		}
+		.weui_cells:after,.weui_cells:before{
+			width: 0;
+		}
+		.submit-btn{
+			width: 
+		}
+		.title{
+			text-align: center;
+			margin: 30px 0;
+			font-weight: 500;
+		}
+		p.info{
+			padding: 0 15px;
+			font-size: 14px;
+		}
+		.weui_cells_title{
+			font-size: 16px;
+			background: #F1F1F1;
+			color: #000;
+		}
+		.warning-txt{
+			margin-left: 20px;
+			font-size: 14px;
+			color:#fff;
+			background:#D92424;
+			display: inline-block;
+			padding: 0 10px;
+			height: 20px;
+			line-height: 20px;
+			border-radius: 10px;
+		}
 	</style>
 </head>
 <body>
 	<div class="container page">
+		<h2 class="title">宝宝巴士故事小程序使用调研</h2>
+		<p class="info">亲爱的家长，这份问卷是想了解您对于《宝宝巴士故事》微信小程序的意见和建议，我们会针对您的意见进行改进，您的填写对我们非常重要，我们承诺问卷结果只用于更新《宝宝巴士故事》小程序，不做他用，请您放心如实填写！谢谢您的配合！</p>
 		<div class="question-item" id="question1">
-			<div class="weui_cells_title">请回答12÷6=？（以防小朋友误点）</div>
+			<div class="weui_cells_title">请回答12÷6=？（以防小朋友误点）
+			<span class="warning-txt" style="display: none">这道题必须回答哦</span>
+			</div>
 			<div class="weui_cells weui_cells_checkbox weui_cell_primary" id="answer1">
-				<label for="b" class="weui_cell weui_check_label">
-					<div class="weui_cell_hd">
-						<input type="radio" class="weui_check" id="b" name="who-paly" value="b">
-						<span class="weui_icon_checked"></span>
-					</div>
-					<div class="weui_cell_bd">
-						<p>b</p>
-					</div>
-				</label>
+	
 			</div>
 		</div>
 		<div class="question-item" id="question2" style="display: none">
-			<div class="weui_cells_title">您的家里是谁在玩宝宝巴士？</div>
+			<div class="weui_cells_title">对于听宝宝巴士故事的小朋友来说，您的身份是？
+			<span class="warning-txt" style="display: none">这道题必须回答哦</span>
+			</div>
 			<div class="weui_cells weui_cells_checkbox" id="answer2">
 				
 			</div>
 		</div>
+		<div class="question-item" id="question3" style="display: none">
+			<div class="weui_cells_title">你一开始是怎么知道《宝宝巴士故事》小程序的？
+			<span class="warning-txt" style="display: none">这道题必须回答哦</span>
+			</div>
+			<div class="weui_cells weui_cells_checkbox" id="answer3">
+				
+			</div>
+		</div>
+		<div class="question-item" id="question4" style="display: none">
+			<div class="weui_cells_title">《宝宝巴士故事》小程序平时主要是家长在用还是小朋友在用呢？
+			<span class="warning-txt" style="display: none">这道题必须回答哦</span>
+			</div>
+			<div class="weui_cells weui_cells_checkbox" id="answer4">
+				
+			</div>
+		</div>
+		<div class="question-item" id="question5" style="display: none">
+			<div class="weui_cells_title">请在下面的选项中，选出您给宝宝使用过的软件。[多选题]
+				<span class="warning-txt" style="display: none">最多选3项</span>
+			</div>
+			<div class="weui_cells weui_cells_checkbox" id="answer5">
+				
+			</div>
+		</div>
+		<div class="question-item" id="question6" style="display: none">
+			<div class="weui_cells_title">请在下面的选项中，选出您最经常给宝宝听故事的软件。
+			<span class="warning-txt" style="display: none">这道题必须回答哦</span>
+			</div>
+			<div class="weui_cells weui_cells_checkbox" id="answer6">
+				
+			</div>
+		</div>
+		<div class="question-item" id="question7" style="display: none">
+			<div class="weui_cells_title">您为什么最经常使用这个平台给孩子听故事呢？[多选题]
+				<span class="warning-txt" style="display: none">最多选3项</span>
+			</div>
+			<div class="weui_cells weui_cells_checkbox" id="answer7">
+				
+			</div>
+		</div>
 		
-		<div class="weui_cells_title">复选列表项</div>
-        <div class="weui_cells weui_cells_checkbox">
-            <label class="weui_cell weui_check_label" for="s11">
-                <div class="weui_cell_hd">
-                    <input type="checkbox" class="weui_check" name="checkbox1" id="s11" />
-                    <i class="weui_icon_checked"></i>
-                </div>
-                <div class="weui_cell_bd">
-                    <p>standard is dealt for u.</p>
-                </div>
-            </label>
-            <label class="weui_cell weui_check_label" for="s12">
-                <div class="weui_cell_hd">
-                    <input type="checkbox" name="checkbox1" class="weui_check" id="s12"/>
-                    <i class="weui_icon_checked"></i>
-                </div>
-                <div class="weui_cell_bd">
-                    <p>standard is dealicient for u.</p>
-                </div>
-            </label>
-
-            <div class="weui_cells_title">文本框</div>
-        <div class="weui_cells">
-            <div class="weui_cell">
-                <div class="weui_cell_bd">
-                    <input class="weui_input" type="text" placeholder="请输入文本"/>
-                </div>
-            </div>
+		<div class="question-item" id="question8" style="display: none">
+	    <div class="weui_cells_title">您在使用《宝宝巴士故事》小程序的时候，有遇到什么问题或者有什么建议吗？欢迎您告知我们！
+			<span class="warning-txt" style="display: none">这道题必须回答哦</span>
+	    </div>
+	    <div class="weui_cells weui_cells_form">
+	      <div class="weui_cell">
+            <textarea id="q8Val" class="weui_textarea" rows="3"></textarea>
+	      </div>
+	    </div>
+		</div>
+		
+		<div class="question-item" id="question9" style="display: none">
+      <div class="weui_cells_title">留下您的QQ号码，就有机会获得宝宝巴士定制公仔一只哦！
+			<span class="warning-txt" style="display: none">这道题必须回答哦</span>
+      </div>
+      <div class="weui_cells">
+        <div class="weui_cell">
+            <input id="q9Val" class="weui_input" type="text"/>
         </div>
+      </div>
+		</div>
 
-        <div class="weui_cells_title">文本域</div>
-        <div class="weui_cells weui_cells_form">
-            <div class="weui_cell">
-                <div class="weui_cell_bd">
-                    <textarea class="weui_textarea" placeholder="请输入文本" rows="3"></textarea>
-                </div>
-            </div>
-        </div>
-		<a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_primary">提交</a>
+		<a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_primary" id="submit-btn">提交</a>
 
 	</div>
+	<div class="weui_msg" style="display: none;">
+    <div class="weui_icon_area"><i class="weui_icon_success weui_icon_msg"></i></div>
+    <div class="weui_text_area">
+        <h2 class="weui_msg_title">问卷到此结束，谢谢您的参与</h2>
+    </div>
+</div>
 <script src="js/jquery.min.js"></script>
 <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>	
